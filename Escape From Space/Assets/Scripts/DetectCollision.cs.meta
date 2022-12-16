@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 10f49619d00ba3045a53f08a5bd871ff
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - explosionParticle: {fileID: 6193912635790038248, guid: c785c5deba6de8748baa4520cbffc025,
+      type: 3}
+  - smokeParticle: {instanceID: 0}
+  - smokeSound: {instanceID: 0}
+  - explodeSound: {instanceID: 0}
+  - moneySound: {instanceID: 0}
+  - gameOverText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
