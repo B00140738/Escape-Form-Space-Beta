@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.014956647, g: 0.007990587, b: 0.004565274, a: 1}
+  m_IndirectSpecularColor: {r: 0.12863478, g: 0.086601935, b: 0.057069033, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,10 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 87dc70039fb8b4844a79b0565a1cc846,
-    type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 3e693aefa5a9bdc458040c0afd982a6c,
-    type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 87dc70039fb8b4844a79b0565a1cc846, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 3e693aefa5a9bdc458040c0afd982a6c, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -155,13 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c93e75f00b894da8a7fcc7c602d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1963857078541744, guid: 4eddec5e5a6ed514cb7704f25ab89890,
-    type: 3}
-  enemyPrefabTwo: {fileID: 6764851737372628660, guid: b6d949b1c7aae784093e9004f7c204d9,
-    type: 3}
+  enemyPrefab: {fileID: 1963857078541744, guid: 4eddec5e5a6ed514cb7704f25ab89890, type: 3}
+  enemyPrefabTwo: {fileID: 6764851737372628660, guid: b6d949b1c7aae784093e9004f7c204d9, type: 3}
   enemyPrefabThree: {fileID: 151664, guid: fa49e460baf435b4780da7196c2ab473, type: 3}
-  powerupPrefab: {fileID: 2983912926432310388, guid: 89441af3e350f4843af1055c34ec6755,
-    type: 3}
+  powerupPrefab: {fileID: 2983912926432310388, guid: 89441af3e350f4843af1055c34ec6755, type: 3}
   enemyCount: 0
   waveCount: 1
   enemySpeed: 50
@@ -193,35 +188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861d5d23e218cb148a2a04595ced15fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Waves:
-  - Enemy:
-    - Amount: 1
-      Type: {fileID: 1963857078541744, guid: 4eddec5e5a6ed514cb7704f25ab89890, type: 3}
-    - Amount: 1
-      Type: {fileID: 1963857078541744, guid: 4eddec5e5a6ed514cb7704f25ab89890, type: 3}
-    - Amount: 1
-      Type: {fileID: 6764851737372628660, guid: b6d949b1c7aae784093e9004f7c204d9,
-        type: 3}
-  - Enemy:
-    - Amount: 3
-      Type: {fileID: 1810168579079622541, guid: 019a50be1c8bea64faec3cd21409e2ad,
-        type: 3}
-    - Amount: 3
-      Type: {fileID: 6764851737372628660, guid: b6d949b1c7aae784093e9004f7c204d9,
-        type: 3}
-    - Amount: 3
-      Type: {fileID: 1810168579079622541, guid: 019a50be1c8bea64faec3cd21409e2ad,
-        type: 3}
-  - Enemy:
-    - Amount: 5
-      Type: {fileID: 1963857078541744, guid: 4eddec5e5a6ed514cb7704f25ab89890, type: 3}
-    - Amount: 5
-      Type: {fileID: 1810168579079622541, guid: 019a50be1c8bea64faec3cd21409e2ad,
-        type: 3}
-    - Amount: 5
-      Type: {fileID: 6764851737372628660, guid: b6d949b1c7aae784093e9004f7c204d9,
-        type: 3}
-  CurrentWave: 0
 --- !u!1 &260854647
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,15 +513,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 247766e192f437c4680b63372b7cb017, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: -14.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 247766e192f437c4680b63372b7cb017, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.52
+      value: -21.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 247766e192f437c4680b63372b7cb017, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.96
+      value: -72.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 247766e192f437c4680b63372b7cb017, type: 3}
       propertyPath: m_LocalRotation.w
@@ -880,6 +846,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b76215a6aa1746478463afba579e72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titleScreen: {fileID: 0}
+  restartButton: {fileID: 0}
+  isGameActive: 0
+  gameOverText: {fileID: 0}
 --- !u!114 &852689637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,9 +862,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e28a99cb5f9f194389432cc3bcab1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOver: 0
+  isGameActive: 0
   floatForce: 0
-  explosionParticle: {fileID: 6193912635790038248, guid: c785c5deba6de8748baa4520cbffc025,
-    type: 3}
+  explosionParticle: {fileID: 6193912635790038248, guid: c785c5deba6de8748baa4520cbffc025, type: 3}
   explodeSound: {fileID: 0}
 --- !u!1 &957402326
 GameObject:
@@ -990,7 +961,7 @@ Transform:
   m_GameObject: {fileID: 957402326}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -50.5, y: -49.4, z: -7}
-  m_LocalScale: {x: 35, y: 35, z: 35}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1091,7 +1062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -12.6, y: 97.24, z: 23.7}
+  m_LocalPosition: {x: -12.6, y: 29.2, z: -11.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1109,8 +1080,7 @@ Skybox:
   m_CustomSkybox: {fileID: 2100000, guid: 7059cfdd72ab2b2418e78edd6f731cf7, type: 2}
 --- !u!1 &1039941405 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 247766e192f437c4680b63372b7cb017,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 247766e192f437c4680b63372b7cb017, type: 3}
   m_PrefabInstance: {fileID: 371261688}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &1039941421
@@ -1142,14 +1112,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
+  verticalInput: 0
   speed: 20
   xRange: 35
-  projectile: {fileID: 3174722484865063794, guid: e02e9ff1e443a5147911d3ae41105d02,
-    type: 3}
+  yRange: 15
+  projectile: {fileID: 3174722484865063794, guid: e02e9ff1e443a5147911d3ae41105d02, type: 3}
 --- !u!4 &1039941433 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 247766e192f437c4680b63372b7cb017,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 247766e192f437c4680b63372b7cb017, type: 3}
   m_PrefabInstance: {fileID: 371261688}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &1039941434
@@ -1178,9 +1148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e28a99cb5f9f194389432cc3bcab1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOver: 0
+  isGameActive: 0
   floatForce: 0
-  explosionParticle: {fileID: 6193912635790038248, guid: c785c5deba6de8748baa4520cbffc025,
-    type: 3}
+  explosionParticle: {fileID: 6193912635790038248, guid: c785c5deba6de8748baa4520cbffc025, type: 3}
   explodeSound: {fileID: 0}
 --- !u!330 &1039941451
 ParticleSystemForceField:
@@ -1193,7 +1164,7 @@ ParticleSystemForceField:
   m_Parameters:
     m_Shape: 0
     m_StartRange: 0
-    m_EndRange: 1.629461
+    m_EndRange: 1.5772333
     m_Length: 1
     m_GravityFocus: 0
     m_RotationRandomness: {x: 0, y: 0}

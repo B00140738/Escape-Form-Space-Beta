@@ -73,7 +73,7 @@ public class SpawnManager : MonoBehaviour
     // Move player back to position in front of own goal
     void ResetPlayerPosition ()
     {
-        player.transform.position = new Vector3(0, 1, -7);
+        player.transform.position = new Vector3(-15, -21, -72);
         player.GetComponent<Rigidbody>().velocity = Vector3.zero;
         player.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 		
