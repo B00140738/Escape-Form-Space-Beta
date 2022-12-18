@@ -30,14 +30,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3174722484865063794}
-  m_LocalRotation: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
+  m_LocalRotation: {x: 0, y: -0.70710677, z: 0.70710677, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 5.84}
   m_LocalScale: {x: 0.2, y: 0.6, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 90}
+  m_LocalEulerAnglesHint: {x: 90, y: -90, z: 90}
 --- !u!33 &3174722484865861490
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -115,10 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: 0
   floatForce: 0
-  explosionParticle: {fileID: 6193912635790038248, guid: c785c5deba6de8748baa4520cbffc025,
-    type: 3}
-  smokeParticle: {fileID: 198791558892717060, guid: 73767e07adddc394d82b994801f89bbb,
-    type: 3}
+  explosionParticle: {fileID: 6193912635790038248, guid: c785c5deba6de8748baa4520cbffc025, type: 3}
+  smokeParticle: {fileID: 198791558892717060, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
   smokeSound: {fileID: 0}
   explodeSound: {fileID: 8300000, guid: 3f5c01dd1e7789f45bff62bb48e39b4b, type: 3}
   moneySound: {fileID: 0}
